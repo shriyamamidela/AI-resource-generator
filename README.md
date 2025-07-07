@@ -1,13 +1,16 @@
 # AI Resource Generator
 
-A full-stack application that generates educational resources using AI technology. The application includes features like flashcards, quizzes, and saved resources management.
+A full-stack educational tool that uses Google’s Gemini LLM to automatically generate flashcards and quizzes from user-input topics. It helps students study more efficiently by leveraging AI for personalized, interactive learning.
+
+
 
 ## Project Structure
 
-The project is organized into two main directories:
+The project is organised into two main directories:
 
 - `client/`: React-based frontend application
 - `server/`: Node.js backend server
+- Firebase Firestore – Used for storing user data and resources
 
 ## Getting Started
 
@@ -38,7 +41,8 @@ npm install
 
 4. Set up environment variables:
    - Copy `.env.example` to `.env` in the server directory
-   - Fill in the required environment variables
+   - Add your Gemini API key and Firebase credentials
+  
 
 ### Running the Application
 
@@ -58,11 +62,19 @@ The application should now be running at `http://localhost:3000` with the backen
 
 ## Features
 
-- AI-powered resource generation
+- AI-powered flashcard & quiz generation (via Gemini LLM)
 - Interactive flashcards
+- Real-time educational content creation
 - Quiz generation and management
 - Save and organize educational resources
+- Full-stack integration (React + Node.js + Firebase)
 - Firebase integration for data persistence
+- Secure API key handling and environment setup
+
+## How AI is used
+- Uses prompt engineering to communicate with Gemini for generating high-quality educational material
+- Accepts topic-based input from users and returns relevant flashcards/quizzes
+- Can be extended for evaluations, personalized learning plans, and more
 
 ## Contributing
 
